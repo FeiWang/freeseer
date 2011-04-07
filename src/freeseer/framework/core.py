@@ -351,6 +351,14 @@ class FreeseerCore:
     def change_output_resolution(self, width, height):
         self.backend.change_output_resolution(width, height)
         self.logger.log.debug('Video output resolution changed to ' + width + 'x' + height)
+    
+    def set_stream_mode(self,mode,url,port,password,mount,res):
+        if mode:
+          self.logger.log.info('Stream recording: ENABLED')
+          self.backend.enable_icecast_streaming(url,port, password, mount,res)
+        else:
+          self.logger.log.info('Stream recording: DISABLED')
+          self.backend.disable_icecast_streaming()
 
 
     def change_stream_resolution(self, width, height):

@@ -67,13 +67,13 @@ class AboutDialog(QtGui.QDialog):
         LICENSE_TEXT=self.tr("Freeseer is licensed under the GPL version 3. This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.")
     
         ABOUT_INFO = u'<h1>'+NAME+u'</h1>' + \
-	    u'<br><b>'+ self.tr("Version")+":" + __version__ + u'</b>' + \
-	    u'<p>' + DESCRIPTION + u'</p>' + \
-	    u'<p>' +  COPYRIGHT + u'</p>' + \
-	    u'<p><a href="'+URL+u'">' + URL + u'</a></p>' \
-	    u'<p>' + LICENSE_TEXT + u'</p>' \
-	    u'<p>' +  self.tr("Record button graphics by")+ ': <a href="' + RECORD_BUTTON_LINK+ u'">' + RECORD_BUTTON_ARTIST + u'</a></p>' \
-	    u'<p>'+ self.tr("Headphones graphics by") + ': <a href="' + HEADPHONES_LINK+ u'">' + HEADPHONES_ARTIST + u'</a></p>'
+            u'<br><b>'+ self.tr("Version")+":" + __version__ + u'</b>' + \
+            u'<p>' + DESCRIPTION + u'</p>' + \
+            u'<p>' +  COPYRIGHT + u'</p>' + \
+            u'<p><a href="'+URL+u'">' + URL + u'</a></p>' \
+            u'<p>' + LICENSE_TEXT + u'</p>' \
+            u'<p>' +  self.tr("Record button graphics by")+ ': <a href="' + RECORD_BUTTON_LINK+ u'">' + RECORD_BUTTON_ARTIST + u'</a></p>' \
+            u'<p>'+ self.tr("Headphones graphics by") + ': <a href="' + HEADPHONES_LINK+ u'">' + HEADPHONES_ARTIST + u'</a></p>'
  
         self.ui.retranslateUi(self);
         self.ui.aboutInfo.setText(ABOUT_INFO);
